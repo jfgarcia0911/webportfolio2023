@@ -1,0 +1,245 @@
+/* Font Used */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel&family=Diplomata+SC&family=Lato:wght@300&family=Raleway&family=Roboto:wght@400;700&family=Rubik+Vinyl&family=Ubuntu&display=swap');
+
+
+/* Variables */
+ 
+:root {
+    --c-brand: #36454f;
+    --c-brand-rgb: 248, 54, 145;
+    --c-dark: #778899;
+    --c-body: #636383;
+    --f-main: 'Lato', sans-serif;
+    --transition: all .6s cubic-bezier(.165, .84, .44, 1); 
+    --shadow: 0px 15px 48px rgba(0,0,0,0.1);
+}
+
+/* Reset & Helpers */
+body {
+    font-family: var(--f-main);
+    color: var(--c-body);
+    line-height: 1.5;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    font-weight: 700;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-dark);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand);
+}
+
+img {
+    width: 100%;
+}
+
+.section-padding{
+    padding: 120px 0 120px 0;
+}
+
+.text-brand{
+    color: var(--c-brand);
+}
+
+.section-title {
+    max-width: 760px;
+    margin: 0 auto 60px auto;
+}
+
+
+
+
+/* Navbar */
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    padding: 30px 0 30px 0;
+    transition: var(--transition);
+}
+
+.navbar.scrolled {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+@media (min-width: 992px){
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+} 
+
+.navbar .navbar-nav .nav-link{
+     font-weight: 700;
+     color: var(--c-dark);
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--c-brand);
+} 
+
+  
+.navbar-brand{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--c-dark);
+}
+
+.social-icons {
+    width: 36px;
+    height: 36px;
+    background-color: var(--c-brand);
+    color: white;
+    border: 2px solid var(--c-brand);
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+}
+.social-icons:hover{
+    background-color: transparent;
+}
+
+
+/* Btn */
+.btn{
+    padding: 10px 24px;
+    border-radius: 24px;
+    border-width: 2px;
+    font-weight: 500;
+
+}
+.btn-brand {
+    background-color: var(--c-brand);
+    color: white;
+    border-color: var(--c-brand);
+}
+.btn-brand:hover{
+    background-color: transparent;
+    color: var(--c-brand);
+    border-color: var(--c-brand);
+    
+}
+
+
+/* Home */
+#home {
+    background-image: url("./images/homeBG.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(231, 231, 231);
+    background-size: 60%;
+    background-position: 110% 20%;
+    background-attachment: fixed;
+}
+
+
+
+
+.intro {
+  font-size: calc(1.625rem + 1.56vw);
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  margin: 0;
+}
+
+.intro-name {
+  font-size: calc(1.625rem + 4.56vw);
+  font-weight: bold;
+  letter-spacing: 0;
+  color: var(--c-brand);  
+}
+
+.intro-title {
+  font-size: calc(1.625rem + 0.36vw);
+  font-weight: bold;
+  letter-spacing: 0.15rem;   
+}
+
+
+/* About Me */
+.tools {
+    width: 70%;
+    object-fit: cover;
+    /*border-radius: 50%;*/
+
+}
+
+/* Project */
+
+
+.project {
+    overflow:hidden;
+    position: relative;
+
+    
+
+}
+
+.project .content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--c-brand);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project img,
+.project .content {
+    transition: var(--transition);
+
+}
+
+.project:hover .content {
+    top: 0;
+}
+
+.project:hover img {
+    transform: translateY(-100%);
+}
+
+/* Client */
+/*.client img {
+    opacity: 0.7;
+    height: 30;
+}
+*/
+/*Contact*/
+#contact{
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(231, 231, 231);
+}
+
+footer h4{
+    color: white;
+}
+.ul-last{
+    list-style: none;
+}
+
+
+
